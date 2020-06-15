@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
         <link rel="stylesheet" type="text/css" href="D:\XXXXX\Front-end\sub.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Quicksand&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -14,42 +14,39 @@
                 </div>
 
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Content</a></li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">About Me</a></li>
-
-                    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Content</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="# ">About Me</a></li>   
                 </ul>
             </nav>
+
+            <div class="banner">
+            </div>
+            
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var nav = document.querySelector("nav");
+                    nav.classList.toggle("sticky", window.scrollY > 0);
+                })
+            </script>
         </header>
-        <main>
+         
+        })
+        <main class="content">
             <article class="home">
-
-
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia rem provident totam, minus aut voluptatibus obcaecati dolorum eaque, distinctio iusto eius ipsam. Veniam non a iure quis ex consequatur odit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, officia? Deserunt dignissimos quisquam ullam exercitationem a delectus doloremque ipsa ut consequuntur hic aut maxime, officia ipsum voluptates. At, autem deleniti?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sapiente perspiciatis facilis sit iusto cupiditate in quae reprehenderit tempore at sint, dolorem ad architecto, consequatur saepe illum tempora eligendi numquam.</p>
             </article>
         </main>
-        <aside>
-            <img src="D:\XXXXX\Ajeng\assets\profile.img" alt="profile">
-            <p>Hello everyone! I am</p>
-            <h1>Ajeng Ratu Langi</h1>
-            <table>
-                <tr>
-                    <p><img class="ikon" src="https://img.icons8.com/wired/32/000000/calendar.png"/>Banyuwangi, 18 mei 2000</p>
-                </tr>
-                <tr>
-                    <p><img class="ikon" src="https://img.icons8.com/wired/32/000000/cell-phone.png"/>+6289515769780</p>
-                </tr>
-                <tr>
-                    <p><img class="ikon" src="https://img.icons8.com/wired/32/000000/secured-letter.png"/>xxx</p>
-                </tr>
-                <tr>    
-                    <p><img class="ikon" src="https://img.icons8.com/wired/32/000000/home.png"/>Muncar, Banyuwangi, Indonesia></Banyuwangi></p>
-                </tr>
-            </table>
+        <aside class="card">
+              <div class="info">
+                  <div class="nama">Ajeng Ratu Langi</div>
+                  <div class="profil">Banyuwangi, 18 Mei 2000</div>
+              </div>
         </aside>
         <footer>
-
         </footer>
     </body>
 </html>
